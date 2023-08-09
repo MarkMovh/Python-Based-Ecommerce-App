@@ -1,0 +1,786 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "login",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "93cd7ed0-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "user",
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "username",
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "GUID": "93cda5e0-3432-11ec-9a87-4b9c1706ae96",
+                            "required": true,
+                            "sample": "Microsoft",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "email",
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "GUID": "93cd7ed3-3432-11ec-9a87-4b9c1706ae96",
+                            "required": true,
+                            "sample": "gmail@gmail.com",
+                            "error": {}
+                        }
+                    ],
+                    "primaryKey": true,
+                    "GUID": "93cd7ed2-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true
+                },
+                {
+                    "code": "",
+                    "name": "password",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "93cd7ed1-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "billgates",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "93ceb751-3432-11ec-9a87-4b9c1706ae96",
+                "properties": []
+            },
+            "isActivated": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "93cd7ed0-3432-11ec-9a87-4b9c1706ae96",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "93d7df10-3432-11ec-9a87-4b9c1706ae96"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "93ceb750-3432-11ec-9a87-4b9c1706ae96",
+            "bucketId": "93d93ea1-3432-11ec-9a87-4b9c1706ae96",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "orderinformation",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "93cda5e1-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "OrderNumber",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "GUID": "93cda5e7-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 2
+                },
+                {
+                    "code": "",
+                    "name": "User",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "93cda5f0-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "markm",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "FullName",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "93cda5e6-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "MarkMovh",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "DateOrdered",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "93cda5e5-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "ISODate(\"2021-10-22\")",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CardNumber",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "93cda5e3-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "1234567890123456",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "BillingAddress",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "93cda5e2-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "Kristiansand Street 5",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Country",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "93cda5e4-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "Norway",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "PhoneNumber",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "93cda5e8-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "12345678",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ProductsOrdered",
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "products",
+                            "isActivated": true,
+                            "type": "array",
+                            "properties": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "document",
+                                    "properties": [
+                                        {
+                                            "code": "",
+                                            "name": "ProductName",
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "primaryKey": false,
+                                            "GUID": "93cda5ec-3432-11ec-9a87-4b9c1706ae96",
+                                            "required": true,
+                                            "sample": "PlayStation 5",
+                                            "error": {}
+                                        },
+                                        {
+                                            "code": "",
+                                            "name": "PostedBy",
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "primaryKey": false,
+                                            "GUID": "93cda5eb-3432-11ec-9a87-4b9c1706ae96",
+                                            "required": true,
+                                            "sample": "anderson",
+                                            "error": {}
+                                        },
+                                        {
+                                            "code": "",
+                                            "name": "Quantity",
+                                            "isActivated": true,
+                                            "type": "numeric",
+                                            "primaryKey": false,
+                                            "GUID": "93cda5ee-3432-11ec-9a87-4b9c1706ae96",
+                                            "required": true,
+                                            "mode": "integer32",
+                                            "sample": 2,
+                                            "error": {}
+                                        },
+                                        {
+                                            "code": "",
+                                            "name": "ProductPrice",
+                                            "isActivated": true,
+                                            "type": "numeric",
+                                            "primaryKey": false,
+                                            "GUID": "93cda5ed-3432-11ec-9a87-4b9c1706ae96",
+                                            "required": true,
+                                            "mode": "integer32",
+                                            "sample": 5999,
+                                            "error": {}
+                                        },
+                                        {
+                                            "code": "",
+                                            "name": "Subtotal",
+                                            "isActivated": true,
+                                            "type": "numeric",
+                                            "primaryKey": false,
+                                            "GUID": "93cda5ef-3432-11ec-9a87-4b9c1706ae96",
+                                            "required": true,
+                                            "mode": "integer32",
+                                            "sample": 11998,
+                                            "error": {}
+                                        }
+                                    ],
+                                    "GUID": "93d80620-3432-11ec-9a87-4b9c1706ae96",
+                                    "arrayItem": true,
+                                    "arrayParentType": "array",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalItems": true,
+                            "primaryKey": false,
+                            "GUID": "93cda5ea-3432-11ec-9a87-4b9c1706ae96",
+                            "required": true,
+                            "error": {}
+                        }
+                    ],
+                    "primaryKey": false,
+                    "GUID": "93cda5e9-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "93d7df12-3432-11ec-9a87-4b9c1706ae96",
+                "properties": []
+            },
+            "isActivated": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "93cda5e1-3432-11ec-9a87-4b9c1706ae96",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "93d87b50-3432-11ec-9a87-4b9c1706ae96"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "93d7df11-3432-11ec-9a87-4b9c1706ae96",
+            "bucketId": "93d93ea1-3432-11ec-9a87-4b9c1706ae96",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Products",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "93cda5f1-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ProductName",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": true,
+                    "GUID": "93cda5f8-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "Windows 10 Home"
+                },
+                {
+                    "code": "",
+                    "name": "ProductDescription",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "93cda5f6-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "Windows 10 is by far the most exclusive software operating system kernel adjusting, modifier thingy magic. You want anti virus? You've got windows defender. You want random unwanted updates that restart your pc and keep it from not turning on for a long time? DO YOU WANT TO HAVE CRASHES ALL THE TIME WITH NEW UPDATES? Welcome to windows 10.",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ProductCategory",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "93cda5f5-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "Operating System",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ProductImage",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "93cda5f7-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "Images/Windows10.png",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ProductPrice",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "93cda5f9-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 5999,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Condition",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "93cda5f2-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "Digital",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "PostedBy",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "93cda5f4-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "Microsoft",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "DateCreated",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "93cda5f3-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "ISODate(\"2021-10-22\")",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "93d8a261-3432-11ec-9a87-4b9c1706ae96",
+                "properties": []
+            },
+            "isActivated": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "93cda5f1-3432-11ec-9a87-4b9c1706ae96",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "93d8c970-3432-11ec-9a87-4b9c1706ae96"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "93d8a260-3432-11ec-9a87-4b9c1706ae96",
+            "bucketId": "93d93ea1-3432-11ec-9a87-4b9c1706ae96",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Shopping_Cart",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "93cda5fa-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "user",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": true,
+                    "GUID": "93cda601-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "sample": "anderson"
+                },
+                {
+                    "code": "",
+                    "name": "products",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "name": "ProductName",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "93cda5fd-3432-11ec-9a87-4b9c1706ae96",
+                                    "required": true,
+                                    "sample": "Windows 10 Home",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "PostedBy",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "93cda5fc-3432-11ec-9a87-4b9c1706ae96",
+                                    "required": true,
+                                    "sample": "Microsoft",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "Quantity",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "93cda5ff-3432-11ec-9a87-4b9c1706ae96",
+                                    "required": true,
+                                    "mode": "integer32",
+                                    "sample": 3,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "ProductPrice",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "93cda5fe-3432-11ec-9a87-4b9c1706ae96",
+                                    "required": true,
+                                    "mode": "integer32",
+                                    "sample": 1500,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "Subtotal",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "93cda600-3432-11ec-9a87-4b9c1706ae96",
+                                    "required": true,
+                                    "mode": "integer32",
+                                    "sample": 4500,
+                                    "error": {}
+                                }
+                            ],
+                            "GUID": "93d8f082-3432-11ec-9a87-4b9c1706ae96",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "GUID": "93cda5fb-3432-11ec-9a87-4b9c1706ae96",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "93d8f081-3432-11ec-9a87-4b9c1706ae96",
+                "properties": []
+            },
+            "isActivated": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "93cda5fa-3432-11ec-9a87-4b9c1706ae96",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "93d93ea0-3432-11ec-9a87-4b9c1706ae96"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "93d8f080-3432-11ec-9a87-4b9c1706ae96",
+            "bucketId": "93d93ea1-3432-11ec-9a87-4b9c1706ae96",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "Finnplus",
+            "type": "bucket",
+            "collectionIds": [
+                "93ceb750-3432-11ec-9a87-4b9c1706ae96",
+                "93d7df11-3432-11ec-9a87-4b9c1706ae96",
+                "93d8a260-3432-11ec-9a87-4b9c1706ae96",
+                "93d8f080-3432-11ec-9a87-4b9c1706ae96"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "93d93ea1-3432-11ec-9a87-4b9c1706ae96",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "93d93ea1-3432-11ec-9a87-4b9c1706ae96": "Finnplus",
+        "93cd7ed0-3432-11ec-9a87-4b9c1706ae96": "_id",
+        "93cd7ed2-3432-11ec-9a87-4b9c1706ae96": "user",
+        "93cda5e0-3432-11ec-9a87-4b9c1706ae96": "username",
+        "93cd7ed3-3432-11ec-9a87-4b9c1706ae96": "email",
+        "93cd7ed1-3432-11ec-9a87-4b9c1706ae96": "password",
+        "93ceb750-3432-11ec-9a87-4b9c1706ae96": "login",
+        "93cda5e1-3432-11ec-9a87-4b9c1706ae96": "_id",
+        "93cda5e7-3432-11ec-9a87-4b9c1706ae96": "OrderNumber",
+        "93cda5f0-3432-11ec-9a87-4b9c1706ae96": "User",
+        "93cda5e6-3432-11ec-9a87-4b9c1706ae96": "FullName",
+        "93cda5e5-3432-11ec-9a87-4b9c1706ae96": "DateOrdered",
+        "93cda5e3-3432-11ec-9a87-4b9c1706ae96": "CardNumber",
+        "93cda5e2-3432-11ec-9a87-4b9c1706ae96": "BillingAddress",
+        "93cda5e4-3432-11ec-9a87-4b9c1706ae96": "Country",
+        "93cda5e8-3432-11ec-9a87-4b9c1706ae96": "PhoneNumber",
+        "93cda5e9-3432-11ec-9a87-4b9c1706ae96": "ProductsOrdered",
+        "93cda5ea-3432-11ec-9a87-4b9c1706ae96": "products",
+        "93cda5ec-3432-11ec-9a87-4b9c1706ae96": "ProductName",
+        "93cda5eb-3432-11ec-9a87-4b9c1706ae96": "PostedBy",
+        "93cda5ee-3432-11ec-9a87-4b9c1706ae96": "Quantity",
+        "93cda5ed-3432-11ec-9a87-4b9c1706ae96": "ProductPrice",
+        "93cda5ef-3432-11ec-9a87-4b9c1706ae96": "Subtotal",
+        "93d7df11-3432-11ec-9a87-4b9c1706ae96": "orderinformation",
+        "93cda5f1-3432-11ec-9a87-4b9c1706ae96": "_id",
+        "93cda5f8-3432-11ec-9a87-4b9c1706ae96": "ProductName",
+        "93cda5f6-3432-11ec-9a87-4b9c1706ae96": "ProductDescription",
+        "93cda5f5-3432-11ec-9a87-4b9c1706ae96": "ProductCategory",
+        "93cda5f7-3432-11ec-9a87-4b9c1706ae96": "ProductImage",
+        "93cda5f9-3432-11ec-9a87-4b9c1706ae96": "ProductPrice",
+        "93cda5f2-3432-11ec-9a87-4b9c1706ae96": "Condition",
+        "93cda5f4-3432-11ec-9a87-4b9c1706ae96": "PostedBy",
+        "93cda5f3-3432-11ec-9a87-4b9c1706ae96": "DateCreated",
+        "93d8a260-3432-11ec-9a87-4b9c1706ae96": "Products",
+        "93cda5fa-3432-11ec-9a87-4b9c1706ae96": "_id",
+        "93cda601-3432-11ec-9a87-4b9c1706ae96": "user",
+        "93cda5fb-3432-11ec-9a87-4b9c1706ae96": "products",
+        "93cda5fd-3432-11ec-9a87-4b9c1706ae96": "ProductName",
+        "93cda5fc-3432-11ec-9a87-4b9c1706ae96": "PostedBy",
+        "93cda5ff-3432-11ec-9a87-4b9c1706ae96": "Quantity",
+        "93cda5fe-3432-11ec-9a87-4b9c1706ae96": "ProductPrice",
+        "93cda600-3432-11ec-9a87-4b9c1706ae96": "Subtotal",
+        "93d8f080-3432-11ec-9a87-4b9c1706ae96": "Shopping_Cart"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "751e6c61-3432-11ec-9a87-4b9c1706ae96"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "751e6c63-3432-11ec-9a87-4b9c1706ae96"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "751e6c62-3432-11ec-9a87-4b9c1706ae96"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v5.0",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2021-10-23T18:53:05.958Z",
+    "GUID": "751e6c60-3432-11ec-9a87-4b9c1706ae96",
+    "isLineageEnabled": false,
+    "lastModifTS": "2021-10-23T23:13:31.712Z",
+    "persistenceSchemaVersion": "5",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "5.2.3"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "93ceb750-3432-11ec-9a87-4b9c1706ae96",
+                        "x": 90,
+                        "y": 340,
+                        "width": 255,
+                        "height": 137,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "93d7df11-3432-11ec-9a87-4b9c1706ae96",
+                        "x": 448,
+                        "y": 325,
+                        "width": 371,
+                        "height": 346,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "93d8a260-3432-11ec-9a87-4b9c1706ae96",
+                        "x": 123,
+                        "y": 89,
+                        "width": 265,
+                        "height": 192,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "93d8f080-3432-11ec-9a87-4b9c1706ae96",
+                        "x": 557,
+                        "y": 88,
+                        "width": 301,
+                        "height": 213,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 50,
+                        "y": 48,
+                        "GUID": "93d93ea1-3432-11ec-9a87-4b9c1706ae96"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
